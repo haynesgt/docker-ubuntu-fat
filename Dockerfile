@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 RUN apt-get update && apt-get upgrade -y
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y curl wget neovim maven python2 python3 man-db gettext \
-git build-essential unzip sudo
+git build-essential unzip sudo openjdk-8-jdk openjdk-11-jdk
 
 RUN yes | unminimize
 
